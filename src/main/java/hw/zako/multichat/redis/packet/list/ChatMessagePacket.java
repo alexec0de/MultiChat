@@ -18,6 +18,10 @@ public class ChatMessagePacket extends AbstractRedisPacket {
         this.message = message;
     }
 
+    public ChatMessagePacket() {
+        this(null);
+    }
+
     public ChatMessagePacket(@Nullable String source) {
         super(source);
     }
